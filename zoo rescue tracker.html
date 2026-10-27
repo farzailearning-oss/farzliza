@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wildlife Rescue Tracker</title>
+    <link rel="stylesheet" href="Zoo Rescue Tracker.css">
+</head>
+
+<body>
+
+    <!-- Fixed Alert Banner -->
+    <aside class="alert-banner" role="status">
+        🚨 Rapid Response: Emergency medical team currently dispatched | <code>position: fixed</code>
+    </aside>
+
+    <main class="container">
+        <header>
+            <h1>🐾 Wildlife Rescue Center</h1>
+            <p>Visualizing CSS layout and positioning properties in action.</p>
+        </header>
+
+        <!-- Static -->
+        <section>
+            <h2>1. Static Positioning (Default)</h2>
+            <p>Normal document flow where elements stack sequentially one after another.</p>
+            <div class="animal-row">🦁 African Lion — Observation Unit</div>
+            <div class="animal-row">🐘 Asian Elephant — Hydration Basin</div>
+            <div class="animal-row">🐧 Magellanic Penguin — Tundra Enclosure</div>
+        </section>
+
+        <!-- Relative -->
+        <section>
+            <h2>2. Relative Positioning</h2>
+            <p>Element shifted relative to where it would normally sit using <code>left: 30px</code>.</p>
+            <div class="animal-row">🦒 Rothschild Giraffe — Checkup Pending</div>
+            <div class="animal-row moved">🐨 Rescued Koala — 30px Offset Applied</div>
+            <div class="animal-row">🦓 Plains Zebra — Stable Area</div>
+        </section>
+
+        <!-- Absolute -->
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Little_Giant_Panda.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Giant Panda"
+                style="width: 100%; border-radius: 8px;">
+            <span class="status-tag">Critical Safe</span>
+            <h3>🐼 Giant Panda</h3>
+            <p style="margin: 6px 0 0; font-size: 0.85rem; color: #666;">Medical evaluation verified clean.</p>
+        </article>
+        <!-- Sticky & Fixed Explanation -->
+        <section>
+            <h2>4. Sticky Positioning Demo</h2>
+            <p>Scroll down to watch the header lock to <code>top: 48px</code> just beneath the fixed emergency bar.</p>
+
+            <div class="sticky-header">
+                📌 Active Inpatients (Sticky Header)
+            </div>
+
+            <div class="case-item"><span>🐯 Bengal Tiger</span> <em>Wound Dressing</em></div>
+            <div class="case-item"><span>🦌 Fallow Deer</span> <em>Cleared for Release</em></div>
+            <div class="case-item"><span>🦉 Barn Owl</span> <em>Nocturnal Feedings</em></div>
+            <div class="case-item"><span>🐢 Sea Turtle</span> <em>Carapace Therapy</em></div>
+            <div class="case-item"><span>🐇 Mountain Hare</span> <em>Post-Op Recovery</em></div>
+            <div class="case-item"><span>🦩 Chilean Flamingo</span> <em>Wing Splinted</em></div>
+            <div class="case-item"><span>🐒 Capuchin Monkey</span> <em>Social Habitat</em></div>
+            <div class="case-item"><span>🐎 Wild Stallion</span> <em>Rehabilitation Yard</em></div>
+        </section>
+    </main>
+
+</body>
+
+</html>
